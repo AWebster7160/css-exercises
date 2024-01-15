@@ -12,6 +12,25 @@ img {
   font-weight: 900;
 }
 
+.menu,
+.veg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu {
+  margin-top: 30px;
+  gap: 62px;
+
+}
+
+.veg {
+  flex-direction: column;
+  text-align: center;
+  max-width: 200px;
+}
+
 /* do not edit this footer */
 .footer {
   position: fixed;
