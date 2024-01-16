@@ -2,49 +2,76 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   margin: 0;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .header {
-  height: 72px;
   background: darkmagenta;
   color: white;
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  font-size: 26px;
+  font-weight: bolder;
+}
+
+.center {
+  display: flex;
+  flex-direction: row;
+  
+  flex: 8 1 auto;
 }
 
 .footer {
-  height: 72px;
+  display: flex;
   background: #eee;
   color: darkmagenta;
+  flex: 1 1 auto;
+  justify-content: center;
+  align-items: center;
+  padding: 14px;
 }
 
 .sidebar {
-  width: 300px;
+  
   background: royalblue;
   box-sizing: border-box;
+  flex-shrink: 0;
+  padding: 16px;
+  width: 300px;
+  
+}
+
+.card-stack {
+  display: flex;
+  flex-flow: row wrap;
+  
+  gap: 40px;
+  padding: 40px;
+ 
 }
 
 .card {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
+  padding: 16px;
+  min-width: 250px;
+  max-width: 300px;
+  font-weight: 500;
+
 }
 
 li,
   a {
-  display: flex;
   list-style: none;
   color: white;
   text-decoration: none;
-}
-
-.center {
-  display: flex;
-  flex-direction: row;
-}
-
-.card-stack {
-  flex-wrap: wrap;
-  gap: 8px;
-  max-width: 500px;
-  flex: 3 1 auto;
+  margin-left: -14px;
+  margin-top: 10px;
+  font-size: larger;
 }
 
